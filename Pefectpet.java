@@ -13,11 +13,11 @@ public class Pefectpet {
         System.out.println("Enter your name:");
         String name = scannerobj.nextLine().toLowerCase();
         
-        if ("aeiou".indexOf(season.substring(0,1)) == -1){
+        if ("abcdefghijklmnopqrstuvwxyz".indexOf(season.substring(0,1)) == -1){
             System.out.println("Not A Real Color! Try Again"); 
             
             }
-            else if ("aeiou".indexOf(season.substring(0,1)) == -1){
+            else if ("abcdefghijklmnopqrstuvwxyz".indexOf(season.substring(0,1)) == -1){
                     System.out.println("Not A Real Season! Try Again");
                 }
                 else if ("abcdefghijklmnopqrstuvwxyz".indexOf(name.substring(0,1)) == -1) {
