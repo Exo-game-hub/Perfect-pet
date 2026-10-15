@@ -12,40 +12,46 @@ public class Pefectpet {
         
         System.out.println("Enter your name:");
         String name = scannerobj.nextLine().toLowerCase();
-         
-
-         if ("abcdefghijklmnopqrstuvwxyz".indexOf(name.substring(0,1).toLowerCase()) >= 0) {
-                System.out.println("Not A Real Name! Try Again");
-        }
-
-            else if (color.contains("blue") && season.contains("fall")){
-                System.out.println("Alligator");
-            }
+        
+        if ("aeiou".indexOf(season.substring(0,1)) == -1){
+            System.out.println("Not A Real Color! Try Again"); 
             
-                else if (color.contains("blue") && season.contains("spring")){
-                    System.out.println("ostrich");
+            }
+            else if ("aeiou".indexOf(season.substring(0,1)) == -1){
+                    System.out.println("Not A Real Season! Try Again");
                 }
-                    else if ("bcdfghjklmnopqrstvwxz".indexOf(name.substring(0,1)) != -1 && color.contains("blue") && season.contains("winter")){
-                        System.out.println("giraffe");
+                else if ("abcdefghijklmnopqrstuvwxyz".indexOf(name.substring(0,1)) == -1) {
+                        System.out.println("Not A Real Name! Try Again");
+                }
+
+                    else if (color.contains("blue") && season.contains("fall")){
+                        System.out.println("Alligator");
                     }
-                        else if (!season.contains("fall")&& color.contains("green")){
-                            System.out.println("dog");
+                    
+                        else if (color.contains("blue") && season.contains("spring")){
+                            System.out.println("ostrich");
                         }
-                            else if (color.contains("red")){
-                                System.out.println("panda");
+                            else if ("bcdfghjklmnopqrstvwxz".indexOf(name.substring(0,1)) != -1 && color.contains("blue") && season.contains("winter")){
+                                System.out.println("giraffe");
                             }
-                                else if ("aeiou".indexOf(name.substring(0,1)) !=1){
-                                    System.out.println("porcupine");
+                                else if (!season.contains("fall")&& color.contains("green")){
+                                    System.out.println("dog");
                                 }
-                                    else if (season.contains("summer")){
-                                        System.out.println("Ponie");
+                                    else if ("aeiou".indexOf(name.substring(0,1)) != -1){
+                                        System.out.println("porcupine");
                                     }
-                                        else if ("bcdfghjklmnopqrstvwxz".indexOf(name.substring(0,1)) != -1 && color.contains("blue") && !season.contains("summer")||!season.contains("fall")){
-                                            System.out.println("axolotl");
+                                        else if (color.contains("red")){
+                                            System.out.println("panda");
                                         }
-                                            else{
-                                                System.out.println("pet rock");
+                                            else if (season.contains("summer")){
+                                                System.out.println("Ponie");
                                             }
+                                                else if ("bcdfghjklmnopqrstvwxz".indexOf(name.substring(0,1)) != -1 && color.contains("blue") && !season.contains("summer")||!season.contains("fall")){
+                                                    System.out.println("axolotl");
+                                                }
+                                                    else{
+                                                        System.out.println("pet rock");
+                                                    }
         scannerobj.close();
     }
 }
