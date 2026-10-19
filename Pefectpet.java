@@ -23,32 +23,30 @@ public class Pefectpet {
                 else if ("abcdefghijklmnopqrstuvwxyz".indexOf(name.substring(0,1)) == -1) {
                         System.out.println("Not A Real Name! Try Again");
                 }
-
                     else if (color.contains("blue") && season.contains("fall")){
                         System.out.println("Alligator");
                     }
-                    
                         else if (color.contains("blue") && season.contains("spring")){
                             System.out.println("ostrich");
                         }
-                            else if ("bcdfghjklmnopqrstvwxz".indexOf(name.substring(0,1)) != -1 && color.contains("blue") && season.contains("winter")){
+                            else if ("bcdfghjklmnopqrstvwxz".indexOf(name.substring(0,1)) != -1 && color.contains("green") && season.contains("winter")){
                                 System.out.println("giraffe");
                             }
                                 else if (!season.contains("fall")&& color.contains("green")){
                                     System.out.println("dog");
                                 }
-                                    else if ("aeiou".indexOf(name.substring(0,1)) != -1){
+                                    else if ("aeiou".indexOf(name.substring(0,1)) != -1 && color.contains("red")){
                                         System.out.println("porcupine");
                                     }
                                         else if (color.contains("red")){
                                             System.out.println("panda");
-                                        }
+                                        }   
                                             else if (season.contains("summer")){
-                                                System.out.println("Ponie");
+                                                System.out.println("Pony");
                                             }
-                                                else if ("bcdfghjklmnopqrstvwxz".indexOf(name.substring(0,1)) != -1 && color.contains("blue") && !season.contains("summer")||!season.contains("fall")){
+                                                else if ("bcdfghjklmnpqrstvwxyz".indexOf(name.substring(0, 1)) != -1&& color.equals("blue") && season.equals("winter")||season.equals("spring")) {
                                                     System.out.println("axolotl");
-                                                }
+                                                }                                               
                                                     else{
                                                         System.out.println("pet rock");
                                                     }
