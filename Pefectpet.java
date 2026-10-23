@@ -1,3 +1,6 @@
+//Azariya Tefera
+//This code outputs a perfect pet for the user using the inputs of the user, such as their name, favorite season, and favorite color.
+
 import java.util.Scanner;
 
 public class Pefectpet {
